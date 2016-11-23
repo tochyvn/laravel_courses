@@ -12,11 +12,11 @@
 */
 
 //Mauvaise pratique pour corriger le tir j'ai créer un controller plus une action par defaut
-/*
+
 Route::get('/', function () {
     return view('welcome');
 });
-*/
+
 
 
 
@@ -51,7 +51,7 @@ Route::get('/tochap', function () {
 
 
 //Autre manière de créer un route à base de façades
-$this->app['router']->get('/tochap', function() { return 'coucou !!!'; });
+//$this->app['router']->get('/tochap', function() { return 'coucou !!!'; });
 
 
 /************** Les façades sont appelées en static contrairement au helper appelé en reference d'objet **************************************************
