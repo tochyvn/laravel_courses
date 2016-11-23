@@ -79,5 +79,5 @@ Route::get('/welcome/index', 'WelcomeController@index');
 Route::get('article/{n}', 'ArticleController@show')->where('n', '[0-9]+');
 
 
-Route::get('users', 'UsersController@getInfos');
-Route::post('users', 'UsersController@postInfos');
+Route::get('/users', 'UsersController@getInfos');
+Route::post('/users', 'UsersController@postInfos');

@@ -8,7 +8,7 @@ class UsersController extends Controller
 {
     public function getInfos() 
     {
-
+    	return view('infos');
     }
 
     public function postInfos()
