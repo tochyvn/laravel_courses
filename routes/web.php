@@ -81,3 +81,11 @@ Route::get('article/{n}', 'ArticleController@show')->where('n', '[0-9]+');
 
 Route::get('/users', 'UsersController@getInfos');
 Route::post('/users', 'UsersController@postInfos');
+
+//On peut remplacer ces 2 routes par un controleur implicite dit RestFull ayant la capacité de detecter le get ou post...
+//Route::controller('users', 'UsersController'); // les methodes doivent etre prefixées de get et post et l'url devient http://monsite.fr/users/infos
+
+
+Route::get('contact', 'ContactController@index');
+Route::post('contact', 'ContactController@submit');
+//Route::Controller('users/infos', 'UsersController');
